@@ -1,2 +1,2 @@
 # sockaddr.Net
-Provides cross-platform socket address bindings for .Net
+Provides cross-platform socket address bindings for .Net -- why reinvent the wheel?
