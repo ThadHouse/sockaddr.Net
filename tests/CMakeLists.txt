@@ -25,4 +25,6 @@ define_gtest(test_sa_get_port)
 define_gtest(test_sa_set_port)
 define_gtest(test_sa_get_scope)
 define_gtest(test_sa_set_scope)
-
+define_gtest(test_sa_get_family)
+define_gtest(test_sa_set_family)
+define_gtest(test_sa_has_len_field)

@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 #if _WIN32
 
 #include <ws2tcpip.h>

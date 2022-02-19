@@ -32,4 +32,10 @@ SOCKADDR_NET_EXPORT const char * sa_get_scope(struct sockaddr *sa);
 
 SOCKADDR_NET_EXPORT bool sa_set_scope(struct sockaddr *sa, const char * scope);
 
+SOCKADDR_NET_EXPORT bool sa_has_len_field(void);
+
+SOCKADDR_NET_EXPORT void sa_set_family(struct sockaddr *sa, sa_family_t family);
+
+SOCKADDR_NET_EXPORT sa_family_t sa_get_family(const struct sockaddr *sa);
+
 }

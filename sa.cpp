@@ -173,4 +173,16 @@ bool sa_set_scope(sockaddr *sa, const char *scope) {
     return false;
 }
 
+bool sa_has_len_field(void) {
+    return offsetof(struct sockaddr, sa_family) != 0;
+}
+
+void sa_set_family(struct sockaddr *sa, sa_family_t family) {
+    sa->sa_family = family;
+}
+
+sa_family_t sa_get_family(const struct sockaddr *sa) {
+    return sa->sa_family;
+}
+
 }
